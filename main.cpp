@@ -97,7 +97,6 @@ int main() {
     // El sistema se va a mantener funcionando para siempre
     while (true) {
         manualPumpActivation(); // Permite operar la bomba manualmente en caso de emergencia
-        checkSoilHumidity(); // Leer el sensor de humedad para detectar si la planta requiere ser regada
         checkWaterReservoir(); // Leer el sensor de luz para detectar si el reservorio debe ser llenado
 
         ThisThread::sleep_for(1s); // Manda a dormir el dispositivo por 1 segundo para ahorrar consumo
